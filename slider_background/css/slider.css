@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.slider .slider-img {
+  position: fixed;
+  top:50%;
+  left: 50%;
+  z-index: -110;
+  display: inline-block;
+  transform: translate(-50%, -50%);
+}
+.slider .active {
+  z-index: -98;
+}
+.slider .behind {
+  z-index: -99;
+}
