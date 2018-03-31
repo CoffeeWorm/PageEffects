@@ -57,4 +57,4 @@ setInterval(function() {
   addClass(sliderImg[counter2], 'behind');
   addClass(sliderImg[counter1], 'active');
   fadeIn(sliderImg[counter1], 1);
-}, 2000);
+}, 10000);

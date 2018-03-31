@@ -1,0 +1,60 @@
+@charset 'utf-8';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.tip {
+  width: 250px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  border: 1px solid #38f;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px #bbb;
+  transition: all 1s;
+  -ms-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  -moz-transition: all 1s;
+}
+
+.tip:hover {
+  border: 1px solid #05a;
+  box-shadow: 0 3px 5px #ccc;
+}
+
+.tip .title {
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font: bold 16px/1.5 '微软雅黑';
+  border-bottom: 1px solid #bbb;
+}
+
+.tip .content {
+  text-indent: 2em;
+  font: 14px/1.5 '微软雅黑';
+}
+
+.tip .confirm {
+  display: block;
+  width: 100px;
+  height: 30px;
+  margin: 30px auto 0;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  background: #38f;
+  border: 0px;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.tip .confirm:active {
+  background: #07d;
+}
