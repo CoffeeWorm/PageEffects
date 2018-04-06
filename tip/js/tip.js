@@ -1,8 +1,7 @@
 (function() {
   var tpl = '<div class="tip">\
-    <h2 class="title">提示：</h2>\
-    <p class="content">本站点为方便个人使用及为毕业设计准备。\
-    This site is for personal use and for graduation design.</p>\
+    <h2 class="title">{title}</h2>\
+    <p class="content">{content}</p>\
     <button class="confirm">知道了</button>\
   </div>';
 
@@ -26,7 +25,6 @@
     initEvent: function() {
       var cfmBtn = this.tag.querySelector('.confirm');
       cfmBtn.addEventListener('click', function(e) {
-        console.log(e);
         this.hide();
       }.bind(this));
     }
